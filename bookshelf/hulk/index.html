@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>小小浩克英雄歐力，刷牙出動！</title>
+    <meta
+      name="description"
+      content="小歐力的雙語超級英雄刷牙繪本。跟著 Ollie 學會保護牙齒、建立刷牙 routine。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="小小浩克英雄歐力，刷牙出動！" />
+    <meta
+      property="og:description"
+      content="小歐力的雙語超級英雄刷牙繪本。跟著 Ollie 學會保護牙齒、建立刷牙 routine。"
+    />
+    <meta property="og:image" content="./og-cover.png" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="小小浩克英雄歐力，刷牙出動！" />
+    <meta
+      name="twitter:description"
+      content="小歐力的雙語超級英雄刷牙繪本。跟著 Ollie 學會保護牙齒、建立刷牙 routine。"
+    />
+    <meta name="twitter:image" content="./og-cover.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="reader" aria-label="小小浩克英雄歐力 ebook">
+      <header class="topbar">
+        <button class="icon-button" id="prevTop" type="button" aria-label="上一頁" title="上一頁">‹</button>
+        <div class="book-title">
+          <span>小小浩克英雄歐力</span>
+          <strong id="pageLabel">Cover</strong>
+        </div>
+        <button class="icon-button" id="nextTop" type="button" aria-label="下一頁" title="下一頁">›</button>
+      </header>
+
+      <section class="stage" aria-live="polite">
+        <article class="page-card" id="pageCard">
+          <div class="art-frame">
+            <img id="pageImage" src="./assets/panel_00.png" alt="小歐力站在洗手台前舉著牙刷像浩克小英雄" />
+          </div>
+          <div class="text-panel">
+            <p class="cn" id="cnText">小小浩克英雄歐力，刷牙出動！</p>
+            <p class="en" id="enText">Little Hulk Hero Ollie, Brush Time!</p>
+          </div>
+        </article>
+      </section>
+
+      <footer class="controls">
+        <button class="nav-button" id="prevBtn" type="button">上一頁</button>
+        <div class="progress" aria-label="閱讀進度">
+          <span id="pageCount">1 / 16</span>
+          <div class="track"><span id="progressBar"></span></div>
+        </div>
+        <button class="nav-button primary" id="nextBtn" type="button">下一頁</button>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
