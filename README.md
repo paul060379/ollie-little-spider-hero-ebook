@@ -1,17 +1,15 @@
-# Ebook Hosting
+# Ollie Ebook Shelf
 
-這個資料夾可以直接放到靜態 hosting。
+這個 repo 現在改成一個 ebook 書櫃：
 
-內容：
+- `ebook/spider/`
+- `ebook/hulk/`
 
-- `index.html`
-- `styles.css`
-- `app.js`
-- `og-cover.png`
-- `assets/`
+網站入口：
 
-部署：
+- `/` 會導到 `/ebook/`
+- `/ebook/` 是書櫃首頁
+- `/ebook/spider/` 是蜘蛛英雄那本
+- `/ebook/hulk/` 是浩克刷牙那本
 
-1. 保持資料夾結構不變
-2. 將整個 `ebook/` 上傳到 GitHub Pages、Netlify、Vercel、S3 或一般靜態主機
-3. 入口頁是 `index.html`
+之後再加新書時，只要在 `ebook/` 底下增加新的資料夾即可。

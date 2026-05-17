@@ -1,0 +1,152 @@
+:root {
+  --ink: #1d2734;
+  --muted: #5b6777;
+  --paper: #fffaf0;
+  --shadow: rgba(27, 36, 53, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "Avenir Next", "PingFang TC", "Noto Sans TC", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(255, 205, 117, 0.48), transparent 28rem),
+    radial-gradient(circle at top right, rgba(121, 190, 255, 0.22), transparent 24rem),
+    linear-gradient(160deg, #fff5dc 0%, #f6fbff 52%, #eef7ff 100%);
+}
+
+.shelf {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 42px 0 56px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3f6fa4;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(34px, 6vw, 64px);
+  line-height: 1.05;
+}
+
+.intro {
+  width: min(720px, 100%);
+  margin: 16px auto 0;
+  font-size: clamp(16px, 2.2vw, 20px);
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) 1fr;
+  gap: 18px;
+  padding: 18px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 20px 50px var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 56px rgba(27, 36, 53, 0.22);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px;
+}
+
+.copy {
+  align-self: center;
+}
+
+.copy strong,
+.copy span,
+.copy p {
+  display: block;
+}
+
+.copy strong {
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.22;
+}
+
+.copy span {
+  margin-top: 10px;
+  font-size: clamp(15px, 1.8vw, 20px);
+  line-height: 1.45;
+  color: #49617e;
+  font-weight: 700;
+}
+
+.copy p {
+  margin: 14px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.card.spider {
+  background:
+    linear-gradient(135deg, rgba(255, 244, 237, 0.94), rgba(241, 247, 255, 0.96));
+}
+
+.card.hulk {
+  background:
+    linear-gradient(135deg, rgba(242, 255, 240, 0.96), rgba(237, 248, 255, 0.96));
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .shelf {
+    width: min(100% - 20px, 1120px);
+    padding: 28px 0 38px;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    border-radius: 22px;
+    padding: 14px;
+  }
+
+  .copy {
+    text-align: center;
+  }
+}
