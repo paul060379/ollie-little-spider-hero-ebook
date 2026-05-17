@@ -2,9 +2,9 @@
 
 正式路徑：
 
-- `/bookshelf/`：書櫃首頁
-- `/bookshelf/spider/`：蜘蛛英雄那本
-- `/bookshelf/hulk/`：浩克刷牙那本
+- `https://paul060379.github.io/ebooks/bookshelf/`：書櫃首頁
+- `https://paul060379.github.io/ebooks/bookshelf/spider/`：蜘蛛英雄那本
+- `https://paul060379.github.io/ebooks/bookshelf/hulk/`：浩克刷牙那本
 
 英文命名：
 
